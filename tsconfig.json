@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {"*": ["types/*"]},
+    "declaration": true,
     "rootDir": "./src",
     "outDir": "./build",
     "module": "commonjs",
@@ -14,6 +16,6 @@
     "watch": false,
     "strictNullChecks": true
   },
-  "include": ["./**/*"],
+  "include": ["./**/*", "prettier.config.js"],
   "exclude": ["prettier.config.js", "./build/*"]
 }

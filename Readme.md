@@ -1,14 +1,5 @@
-# TypeScript starter kit
+# parse-data
 
-A bare-bones starter kit for typescript. My [new-project-script](https://github.com/Rolias/new-project-script) repository is a convenient way to clone a repo, get rid of all the old history and have a shiny new repo to work in.
+A couple of simple utils for parsing data. One reads the package.json file to get the version field. Needed when not running from a native node environment. Another reads a CSV like file and returns an array of array strings representing the data. The rows are delimited by new lines, the columns are delimited by the passed in separator, typically a comma or tab.
 
-## Chrome Extensions
-
-When writing a chrome extension, or I suppose for the front end in general, the `tsconfig.json` will need adjustments:
-
-```json
-    "module": "es6",
-    "moduleResolution": "classic",
-```
-
-For node development in mid-2019, the defaults are fine.
+At the moment this is not intended for public consumption.

@@ -1,6 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: ['plugin:@typescript-eslint/recommended', 'prettier', 'prettier/@typescript-eslint'],
+  "plugins":["prettier"],
   parserOptions: {
     project: './tsconfig.json',
     ecmaVersion: 2018,
@@ -14,6 +15,7 @@ module.exports = {
   // see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
   // for list of rules
   rules: {
+    'prettier/prettier':'error',
     '@typescript-eslint/member-delimiter-style': {
       multiline: {
         delimiter: 'comma',
